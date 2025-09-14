@@ -27,6 +27,7 @@ impl EuclideanForm {
     ///
     /// Example:
     /// ```rust
+    /// use dmrs::number_theory::types::euclidian_form::EuclideanForm;
     /// let euclidean_division = EuclideanForm::from(-37, 5, -8, 3)
     /// /*
     ///     'euclidean_division' has the type:

@@ -23,6 +23,7 @@ impl CongruenceRelation {
     ///
     /// Example:
     /// ```rust
+    /// use dmrs::number_theory::types::congruence_relation::CongruenceRelation;
     /// let congruence = CongruenceRelation::from(53, 23, 10);
     /// /*
     ///     'congruence' has the type:
@@ -48,8 +49,9 @@ impl CongruenceRelation {
     /// Examples:
     ///
     /// ```rust
-    /// let congruence = Congruence::from(152, 17, 10);
-    /// let other_congruence = Congruence::from(152, 36, 5);
+    /// use dmrs::number_theory::types::congruence_relation::CongruenceRelation;
+    /// let congruence = CongruenceRelation::from(152, 17, 10);
+    /// let other_congruence = CongruenceRelation::from(152, 36, 5);
     /// println!("is valid? {}", congruence.is_valid()); // true, because 152 ≡ 17 (mod 10)
     /// println!("is valid? {}", other_congruence.is_valid()); // false, because 152 ≢ 36 (mod 5)
     /// ```

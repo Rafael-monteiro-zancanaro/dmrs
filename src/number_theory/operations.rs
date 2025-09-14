@@ -16,7 +16,8 @@ use crate::number_theory::types::euclidian_form::EuclideanForm;
 ///
 /// Example:
 /// ```rust
-/// let euclidean_result = dmrs::operations::div(11_i32, 3_i32);
+/// use dmrs::number_theory::operations;
+/// let euclidean_result = euclidean_representation_of(11_i32, 3_i32);
 /// /*
 ///  'euclidean_result' has the type:
 ///     EuclideanForm {
@@ -45,7 +46,8 @@ pub fn euclidean_representation_of(dividend: i32, divider: i32) -> EuclideanForm
 ///
 /// Example:
 /// ```rust
-/// let remainder = dmrs::operations::modulo(152, 5);
+/// use dmrs::number_theory::operations;
+/// let remainder = modulo(152, 5);
 /// assert_eq!(remainder, 2_i32); // true, because 152 mod 5 == 2
 /// ```
 pub fn modulo(dividend: i32, divider: i32) -> i32 {
@@ -62,7 +64,8 @@ pub fn modulo(dividend: i32, divider: i32) -> i32 {
 ///
 /// Example:
 /// ```rust
-/// let quotient = dmrs::operations::div(152, 5);
+/// use dmrs::number_theory::operations;
+/// let quotient = div(152, 5);
 /// assert_eq!(quotient, 30_i32); // true, because 152 div 5 == 30
 /// ```
 pub fn div(dividend: i32, divider: i32) -> i32 {
